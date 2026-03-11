@@ -1,0 +1,519 @@
+@media screen and (min-width: 1400px){
+
+    body {
+        font-family:
+        -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        margin: auto;
+        font-size: 1.1rem;
+        max-width: 1800px;
+        min-height: 1080px;
+        /*padding: 2rem;*/
+        background: 
+        radial-gradient(
+        ellipse farthest-corner at 10% 120%,
+        #0f0f0f 40%,
+        rgba(255, 255, 255,0.5)
+        ),
+        url(../img/Fon2.png);
+        color: white;
+    }
+
+  /*----------------------------Шапка----------------------------*/
+  header{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    padding: 5px 0 5px 0;
+  }
+
+  /*----------------------------Шапка-Меню----------------------------*/
+
+  .auth-button{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .auth-button .button-link{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 15px;
+    margin: -5px 1px;
+    background: rgb(0, 0, 0);
+    transition: 0.5s;
+    float: right;
+  }
+
+  .auth-button .button-link:hover{
+    text-decoration: none;
+    color: black;
+    background: white;
+    transition: 0.5s;
+  }
+  
+    button, input[type="submit"], input[type="reset"] {
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+    }
+
+  .auth-button .button-link-alt{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 15px;
+    margin: -5px 1px;
+    background: rgb(143, 64, 64);
+    transition: 0.5s;
+    float: right;
+  }
+
+  .auth-button .button-link-alt:hover{
+    text-decoration: none;
+    color: black;
+    background: white;
+    transition: 0.5s;
+  }
+
+  /*----------------------------Главный ----------------------------*/
+
+  main{
+    width: 100%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px 0;
+  }
+  /*----------------------------Инфо Пользователя----------------------------*/
+
+  .InfomationUser{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 0 35px 0;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    box-shadow: #0f0f0f;
+    box-shadow: inset 0 0 5px;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+  }
+
+    .InfomationUser .Avatar {
+      width: 30%;
+      height: auto;
+      text-align: center;
+    }
+
+    .InfomationUser .Avatar img{
+      width: 150px;
+      height: 150px;
+      border: #0f0f0f 2px black;
+      border-radius: 50%;
+      margin: 10% 0 0 0;
+    }
+
+    .InfomationUser .InfomationText {
+      width: 70%;
+      height: auto;
+    }
+
+    .InfomationUser .InfomationText .NameUser{
+      width: 100%;
+      height: auto;
+      display: flex;
+    }
+
+    
+    .InfomationUser .InfomationText .NameUser h2{
+      width: 100%;
+    }
+
+    .Role{
+        position: absolute;
+        left: 45%;
+        top: 13%;
+        background: rgba(126, 126, 126, 0.75);
+        border-radius: 10px;
+        width: 180px;
+        height: 25px;
+        text-align: center;
+    }
+
+    .InfomationUser .InfomationText .LoginUser {
+      width: 100%;
+      height: auto;
+      display: flex;
+    }
+    
+    .InfomationUser .InfomationText .LoginUser img{
+      width: 25px;
+      height: 25px;
+    }
+    .InfomationUser .InfomationText .LoginUser p{
+        margin: 0 10px;
+    }
+
+    .InfomationUser .InfomationText .Contact {
+      width: 100%;
+      height: auto;
+      display: flex;
+    }
+
+    .InfomationUser .InfomationText .Contact img{
+      width: 25px;
+      height: 25px;
+    }
+
+    .InfomationUser .InfomationText .Contact p{
+        margin: 0 10px;
+    }
+    /*---------------------------- Кнопки функционала ----------------------------*/
+
+   .buttonsOption{
+    width: 80%;
+    margin: 10px auto;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+   }
+
+    .buttonsOption .ButOption{
+      width: 18%;
+      height: auto;
+      padding: 10px;
+      margin: 0 10px;
+      border-radius: 15px;
+      border: 3px solid rgb(0, 0, 0);
+      background-color: rgb(183, 31, 31);
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      transition: 0.5s;
+    }
+
+    .buttonsOption .ButOption:hover{
+      border-radius: 15px;
+      border: 3px solid rgb(206, 23, 23);
+      background-color: rgb(255, 255, 255);
+      text-align: center;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      transition: 0.5s;
+    }
+
+  /*----------------------------Изменение профиля----------------------------*/
+
+   .FunctionProfile{
+    width: 80%;
+    height: auto;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    box-shadow: #0f0f0f;
+    box-shadow: inset 0 0 5px;
+    margin: 20px auto;
+    padding: 0 0 35px 0;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.7);
+   }
+
+   .FunctionProfile .UpdateProfile{
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+   }
+
+   .FunctionProfile .UpdateProfile .Inputline{
+    display: flex;
+   }
+
+   .FunctionProfile .UpdateProfile .Inputline .form-group{
+    width: 48%;
+    margin: 10px;
+   }
+
+   .FunctionProfile .UpdateProfile .Inputline .form-group label{
+      margin: 10px 0;
+   }
+
+   .FunctionProfile .UpdateProfile .Inputline .form-group input{
+        width: 90%;
+        padding: 10px;
+        border: 2px solid silver;
+        border-radius: 15px;
+        transition: 0.5s;
+    }
+    .FunctionProfile .UpdateProfile .Inputline .form-group input[name="username"] {
+      pointer-events: none;
+    }
+
+    .FunctionProfile .UpdateProfile .Inputline .form-group input:hover{
+        padding: 15px;
+        border: 3px solid rgb(183, 31, 31);
+        border-radius: 15px;
+        transition: 0.5s;
+    }
+
+    .FunctionProfile .UpdateProfile .Inputline .form-group textarea{
+        width: 85%;
+        min-height: 20px;
+        padding: 10px;
+        border: 2px solid silver;
+        border-radius: 15px;
+        transition: 0.7s;
+    }
+
+    .FunctionProfile .UpdateProfile .Inputline .form-group textarea:hover{
+        padding: 15px;
+        min-height: 100px;
+        border: 3px solid rgb(183, 31, 31);
+        border-radius: 15px;
+        transition: 0.7s;
+    }
+
+
+    .FunctionProfile .UpdateProfile .Inputline .form-group select{
+        width: 90%;
+        padding: 15px;
+        border: 2px solid silver;
+        border-radius: 15px;
+        transition: 0.5s;
+    }
+
+    .FunctionProfile .UpdateProfile .Inputline .form-group option {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+        border-radius: 15px;
+        border: 2px solid #dddddd;
+        background: #eeeeee;
+        padding: 10px;
+        transition: 0.4s;
+    }
+/*----------------------------Посты модификаций----------------------------*/
+  
+.PostsMods{
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  display: none;
+}
+
+.PostsMods .PopularMods-block .elementModsMin{
+    width: 95%;
+    display: flex;
+    border: 2px solid rgb(99, 99, 99);
+    height: 100px;
+    margin: 10px auto;
+    transition: 0.5s;
+    background-color: black;
+    cursor: pointer;
+  }
+
+  .PostsMods .PopularMods-block .elementModsMin:hover{
+    width: 97%;
+    height: 105px;
+    background: white;
+    color: black;
+    transition: 0.5s;
+  }
+
+  .PostsMods .PopularMods-block .elementModsMin .imgBlock{
+    width: 15%;
+  }
+
+  .PostsMods .PopularMods-block .elementModsMin hr{
+    width: 100%;
+  }
+
+  .PostsMods .PopularMods-block .elementModsMin .textBlock{
+    width: 80%;
+    margin: 10px;
+  }
+
+  .PostsMods .PopularMods-block .elementModsMin .textBlock p{
+    margin: 0;
+    padding: 0;
+  }
+
+  .PostsMods .PopularMods-block .elementModsMin .textBlock .headerMods{
+    display: flex;
+    height: 20px;
+  }
+
+  .PostsMods .PopularMods-block .elementModsMin .textBlock .HeadMod{
+    width: 70%;
+  }
+
+  .PostsMods .PopularMods-block .elementModsMin .textBlock .LogoGame{
+    width: 10%;
+    text-align: center;
+  }
+
+  .PostsMods .PopularMods-block .elementModsMin .textBlock .PointLike{
+    width: 10%;
+    text-align: center;
+  }
+
+  .PostsMods .PopularMods-block .elementModsMin .textBlock .LogoGame{
+    width: 10%;
+    text-align: center;
+  }
+  
+  .PostsMods .PopularMods-block .elementModsMin .textBlock .Descript{
+    height: 80px;
+    font-size: 0.9rem;
+  }
+
+
+
+  /*----------------------------Жалобы----------------------------*/
+
+  .Moderate{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: none;
+  }
+
+  .Moderate .ElementModerate{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: rgba(99, 99, 99, 0.7);
+    border: 2px solid rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-wrap: wrap; /* default - flex-wrap: no-wrap */
+    margin: 15px 0;
+  }
+
+  .Moderate .ElementModerate .BlockText{
+    width: 60%;
+    margin: 10px 50px;
+  }
+
+  .Moderate .ElementModerate .BlockText .Line{
+    display: flex;
+  }
+
+  .Moderate .ElementModerate .BlockText .Line img{
+    margin: 10px 20px;
+  }
+
+  .Moderate .ElementModerate .BlockText .Line .TextP{
+    margin: 10px 20px;
+  }
+
+  .Moderate .ElementModerate .BlockStatus{
+    width: 20%;
+    margin: 0 50px;
+  }
+
+  .Moderate .ElementModerate .BlockStatus p{
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid silver;
+    text-align: center;
+    background: rgba(255, 175, 2, 0.75);;
+  }
+/*----------------------------Дискуссии----------------------------*/
+  .PostsDiscussion{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: none;
+  }
+
+  .PostsDiscussion .ElementDiscussion{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: rgba(99, 99, 99, 0.7);
+    border: 2px solid rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-wrap: wrap; /* default - flex-wrap: no-wrap */
+    margin: 15px 0;
+  }
+
+  .PostsDiscussion .ElementDiscussion .BlockText{
+    width: 60%;
+    margin: 10px 50px;
+  }
+
+  .PostsDiscussion .ElementDiscussion .BlockText .Line{
+    display: flex;
+  }
+
+  .PostsDiscussion .ElementDiscussion .BlockText .Line .TextP{
+    margin: 10px 20px 10px 0;
+  }
+
+  .PostsDiscussion .ElementDiscussion .BlockStatus{
+    width: 20%;
+    margin: 0 50px;
+  }
+
+  .PostsDiscussion .ElementDiscussion .BlockStatus p{
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid silver;
+    text-align: center;
+    background: rgba(255, 175, 2, 0.75);;
+  }
+
+  /*----------------------------Список пользователей----------------------------*/
+
+  .Users{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    display: none;
+  }
+
+  .Users .ElementUsers{
+    width: 33%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-wrap: wrap; /* default - flex-wrap: no-wrap */
+    margin: 15px 0;
+    padding: 10px;
+  }
+
+  .Users .ElementUsers .BlockInfo{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .Users .ElementUsers .BlockInfo img{
+      border: #0f0f0f 2px black;
+      border-radius: 50%;
+  }
+
+    /*----------------------------Подвал----------------------------*/
+  footer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    padding: 15px 0;
+  }
+  .Status-KVO{
+    width: 90%;
+    margin: 0 20px;
+  }
+  .contact{
+    width: 10%;
+    text-decoration: none;
+  }
+  .contact img{
+    margin: 0 10px;
+  }
+}

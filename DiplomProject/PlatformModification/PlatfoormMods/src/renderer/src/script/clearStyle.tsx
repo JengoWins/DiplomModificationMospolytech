@@ -1,0 +1,1 @@
+document.head.querySelectorAll('style').forEach(style => style.remove());

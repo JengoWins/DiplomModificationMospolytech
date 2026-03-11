@@ -1,0 +1,402 @@
+@media screen and (min-width: 1400px){
+  body {
+    font-family:
+      -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: auto;
+    font-size: 1.1rem;
+    max-width: 1800px;
+    min-height: 1080px;
+    padding: 2rem;
+    background: 
+    radial-gradient(
+    ellipse farthest-corner at 10% 120%,
+    #0f0f0f 40%,
+    rgba(255, 255, 255,0.5)
+    ),
+    url(../img/Fon2.png);
+    color: white;
+  }
+
+  /*----------------------------Шапка----------------------------*/
+  header{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    padding: 5px 0 0 0;
+  }
+
+  /*----------------------------Шапка-Меню----------------------------*/
+  .logo-button{
+    width: 10%;
+    height: auto;
+    text-align: center;
+  }
+
+  .logo-button img{
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .memu-buttons{
+    width: 75%;
+    height: auto;
+  }
+
+  /* Кнопка выпадающего списка */
+  .dropbtn {
+    text-decoration: none;
+    color: white;
+    padding: 18px;
+    margin: -5px;
+    background: rgb(0, 0, 0);
+    transition: 0.5s;
+    border: none;
+    font-size: 1.1rem;
+  }
+
+  /* Контейнер <div> - необходим для размещения выпадающего содержимого */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Выпадающее содержимое (скрыто по умолчанию) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(183, 31, 31);
+    min-width: 180px;
+    z-index: 3;
+    margin: 5px 0 0 -5px;
+  }
+
+  /* Ссылки внутри выпадающего списка */
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+
+  /* Изменение цвета выпадающих ссылок при наведении курсора */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+    transition: 0.5s;
+  }
+
+  /* Показать выпадающее меню при наведении курсора */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
+  .dropdown:hover .dropbtn {
+    text-decoration: none;
+    color: black;
+    background: white;
+    transition: 0.5s;
+  }
+
+  .memu-buttons .button-link {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 18px;
+    margin: -5px;
+    background: rgb(0, 0, 0);
+    transition: 0.5s;
+    z-index: 3;
+  }
+
+  .memu-buttons .button-link:hover{
+    text-decoration: none;
+    color: black;
+    background: white;
+    transition: 0.5s;
+  }
+
+  .auth-button{
+    width: 15%;
+    height: auto;
+  }
+
+  .auth-button .button-link{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 18px;
+    margin: -5px;
+    background: rgb(0, 0, 0);
+    transition: 0.5s;
+  }
+
+  .auth-button .button-link:hover{
+    text-decoration: none;
+    color: black;
+    background: white;
+    transition: 0.5s;
+  }
+
+  /*----------------------------Главное меню----------------------------*/
+
+  main{
+    width: 100%;
+    min-height: 800px;
+    margin: 10px 0;
+    display: flex;
+  }
+
+  .PopularMods-block{
+    position: relative; 
+    width: 30%;
+    min-height: 800px;
+    height: auto;
+    border-radius: 10px 40px 10px 10px;
+  }
+
+.PopularMods-block::before {
+  content: '';
+  position: absolute;
+  border-radius: 10px 40px 10px 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.75;
+  z-index: 1;
+}
+
+.PopularMods-block > * {
+  position: relative;
+  z-index: 2;
+}
+
+  .PopularMods-block h3{
+    text-align: center;
+  }
+
+  .PopularMods-block .elementModsMin{
+    width: 95%;
+    display: flex;
+    border: 2px solid rgb(99, 99, 99);
+    height: 100px;
+    margin: 10px auto;
+    transition: 0.5s;
+    background-color: black;
+    cursor: pointer;
+  }
+
+  .PopularMods-block .elementModsMin:hover{
+    width: 97%;
+    height: 105px;
+    background: white;
+    color: black;
+    transition: 0.5s;
+  }
+
+  .PopularMods-block .elementModsMin .imgBlock{
+    width: 20%;
+  }
+
+  .PopularMods-block .elementModsMin hr{
+    width: 100%;
+  }
+
+  .PopularMods-block .elementModsMin .textBlock{
+    width: 80%;
+    margin: 10px;
+  }
+
+  .PopularMods-block .elementModsMin .textBlock p{
+    margin: 0;
+    padding: 0;
+  }
+
+  .PopularMods-block .elementModsMin .textBlock .headerMods{
+    display: flex;
+    height: 20px;
+  }
+
+  .PopularMods-block .elementModsMin .textBlock .HeadMod{
+    width: 70%;
+  }
+
+  .PopularMods-block .elementModsMin .textBlock .LogoGame{
+    width: 10%;
+    text-align: center;
+  }
+
+  .PopularMods-block .elementModsMin .textBlock .PointLike{
+    width: 10%;
+    text-align: center;
+  }
+
+  .PopularMods-block .elementModsMin .textBlock .LogoGame{
+    width: 10%;
+    text-align: center;
+  }
+  
+  .PopularMods-block .elementModsMin .textBlock .Descript{
+    height: 80px;
+    font-size: 0.9rem;
+  }
+
+  .NewsMods-block{
+    width: 70%;
+    min-height: 800px;
+    height: auto;
+    border: 3px solid black;
+    background-color: black;
+    margin-left: 20px;
+  }
+  
+  .NewsMods-block .NewFutureGame{
+    width: 100%;
+    height: 250px;
+    background: 
+    linear-gradient(to right,rgb(0, 0, 0),75%, rgba(255, 255, 255, 0)),
+    url(../img/PrevieGame.png) no-repeat center/100%;
+  }
+
+  .NewsMods-block .NewFutureGame .HeadGame{
+    width: 100%;
+    height: 10%;
+  }
+
+  .NewsMods-block .NewFutureGame .HeadGame h1{
+    margin: 0 50px;
+  }
+
+  .NewsMods-block .NewFutureGame .Descript{
+    display: flex;
+    width: 100%;
+    height: 90%;
+  }
+
+  .NewsMods-block .NewFutureGame .Descript p{
+    width: 70%;
+    margin: 70px 50px;
+  }
+  .NewsMods-block .NewFutureGame .Descript a{
+    width: 150px;
+    height: 25px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgb(183, 31, 31);
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+
+  .NewsMods-block .NewFutureGame .Descript a:hover{
+    width: 150px;
+    height: 25px;
+    padding: 12px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 3px solid rgb(206, 23, 23);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.5s;
+  }
+
+  .NewsMods-block .ListMods{
+    width: 90%;
+    min-height: 500px;
+    display: flex;
+    font-size: 0.9rem;
+    margin: 0 auto;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  
+  .NewsMods-block h1{
+    margin: 20px;
+  }
+
+  .NewsMods-block hr{
+    width: 97%;
+  }
+
+  .NewsMods-block .ListMods .ElementMods{
+    width: 30%;
+    height: 320px;
+    margin: 10px;
+    /*border: 3px solid white;*/
+    border-radius: 3%;
+    transition: 0.5s;
+    background-color: black;
+    cursor: pointer;
+  }
+
+  .NewsMods-block .ListMods .ElementMods:hover{
+    width: 30%;
+    height: 320px;
+    margin: 10px;
+    /*border: 3px solid white;*/
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255,0.85);
+    color: black;
+  }
+
+  .NewsMods-block .ListMods .ElementMods a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .NewsMods-block .ListMods .ElementMods .ImgPost{
+    height: 65%;
+    text-align: center;
+    margin: 10px auto;
+  }
+
+  .NewsMods-block .ListMods .ElementMods .ImgPost img{
+    width: 300px;
+  }
+
+  .NewsMods-block .ListMods .ElementMods .TextContent{
+    height: 35%;
+    text-align: center;
+    margin: 5px 10px;
+    text-align: left;
+  }
+
+  .NewsMods-block .ListMods .ElementMods .TextContent p{
+    width: 100%;
+    margin: 5px;
+  }
+
+  .NewsMods-block .ListMods .ElementMods .TextContent .InfoMod{
+    display: flex;
+    color: cadetblue;
+  }
+  /*----------------------------Подвал----------------------------*/
+  footer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    padding: 15px 0;
+  }
+  .Status-KVO{
+    width: 90%;
+    margin: 0 20px;
+  }
+  .contact{
+    width: 10%;
+    text-decoration: none;
+  }
+  .contact img{
+    margin: 0 10px;
+  }
+}
